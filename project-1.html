@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 1</title>
-    <meta name="description" content="Case study page of Project" />
+    <title>Predicting Urban Development in Dakota and Scott Counties</title>
+    <meta name="description" content="Predicting urban development in Dakota and Scott counties details" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -22,12 +22,12 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
+              src="./assets/png/meinwoods2.png"
+              alt="Kamryn Logo Image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Kamryn Benusa</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -84,81 +84,146 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 1</h1>
+        <h1 class="heading-primary">Predicting Urban Development in Dakota and Scott Counties</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Every year, more and more people move to urban areas, and more and more land is developed for urban use. In Minnesota, more than 80% of residents live in urban areas, and the seven-county metropolitan area makes up about 63% of the state’s total population. In this project, I created a fuzzy suitability model of Dakota and Scott counties to determine areas most suitable for urban expansion. This model was developed using information about urban expansion from 2000 to 2020 and was informed by the following explanatory variables: Distance to major roads, distance to secondary roads, drive time to urban centers, distance to water, land cover, and slope.
           </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
         </div>
       </div>
     </section>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Interpolating a Mass Balance Surface at Storglaciären</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            The mass balance of a glacier describes the total sum of all accumulation and ablation over a single hydrological year. When the annual net balance is positive, accumulation is greater than ablation, so the glacier will become larger. When the annual net balance is negative, ablation is greater than accumulation, so the glacier will become smaller. Using ablation stake data and snow depth soundings, I was tasked with interpolating multiple surfaces to estimate the annual net mass balance of Storglaciären.
+          </p>
+        </div>
+        
+      </div>
+    </section>
     <section class="project-details">
-      <div class="main-container">
-        <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
-          </div>
-          <div class="project-details__content-main">
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
-              </p>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
-              </p>
-            </div>
+  <div class="main-container">
+    <div class="project-layout">
+      <div class="project-item">
+        <img
+          src="./assets/png/suitabilitymap.png"
+          alt="Image 1"
+          class="project-image"
+        />
+        <div class="project-text">
+          <h3 class="project-title">Dakota and Scott Counties Suitability for Urban Development</h3>
+          <p class="project-paragraph">
+            
+          </p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img
+          src="./assets/png/suitableareasmap.png"
+          alt="Image 2"
+          class="project-image"
+        />
+        <div class="project-text">
+          <h3 class="project-title">Suitable Areas for Urban Development</h3>
+          <p class="project-paragraph">
+            
+          </p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img
+          src="./assets/jpeg/Suitability_Scores.jpg"
+          alt="Image 3"
+          class="project-image"
+        />
+        <div class="project-text">
+          <h3 class="project-title">Distribution of Suitability Scores</h3>
+          <p class="project-paragraph">
+            The distribution of suitability scores is right-skewed and appears bimodal with possibly a third peak. The majority of the land is not suitable for development, hence why the 92nd was chosen as an indicator of suitability. The multiple peaks are likely explained by the categorical variables in the model. The mean of the suitability scores is about 0.42, and the median is about 0.38—this further indicates that the distribution is right-skewed. The vast majority of the scores are between 0.32 and 0.61. There does not appear to be any outliers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .project-layout {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project-item {
+    display: flex; /* Arrange image and text side by side */
+    gap: 30px;
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .project-image {
+    width: 600px; /* Adjust image width as needed */
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .project-text {
+    flex: 1; /* Take remaining space */
+  }
+
+  .project-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+
+  .project-paragraph {
+    line-height: 1.7;
+    font-size: 2.1em;
+  }
+
+  .main-container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+</style>
+            <div class="main-container">
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
+              <h3 class="project-details__content-title">Skills Developed</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">Identification of a GIS Problem</div>
+                <div class="skills__skill">Problem-Solving</div>
+                <div class="skills__skill">Suitability Model Creation</div>
+                <div class="skills__skill">Cartography</div>
+                <div class="skills__skill">Geodatabase Creation, Organization, and Management</div>
+		<div class="skills__skill">Network Analysis</div>
               </div>
             </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">ArcGIS Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Raster Calculator</div>
+                <div class="skills__skill">Definition Query</div>
+                <div class="skills__skill">Distance Accumulation</div>
+                <div class="skills__skill">Clip</div>
+                <div class="skills__skill">Polygon to Raster</div>
+		<div class="skills__skill">Reclassify</div>
+		<div class="skills__skill">Set Null</div>
+		<div class="skills__skill">Slope</div>
+		<div class="skills__skill">New Network Dataset</div>
+		<div class="skills__skill">Network Analysis - Service Area</div>
+		<div class="skills__skill">Suitability Modeler</div>
+		<div class="skills__skill">Zonal Statistics</div>
+              </div>
             </div>
+          </div>
+            
           </div>
         </div>
       </div>
@@ -171,57 +236,28 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kamryn-benusa-106a11304/">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.github.com/kamrynbenusa">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Kamryn Benusa</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Statistics Student at Gustavus Adolphus College.
             </p>
           </div>
-        </div>
-
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
         </div>
       </div>
     </footer>
